@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  node:
+    image: node:alpine
+    volumes:
+      - 'C:\Users\Brenim Ben10\Documents\Front\simple-react:/usr/app'
+    ports:
+      - "3000:3000" ## redirecionamento de porta quando chegar alguma requisição na porta 3000 chama o container na porta 3000
+    working_dir: /usr/app
+    command: npm start
