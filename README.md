@@ -2,13 +2,14 @@
 ## You can run the app here: 
 (Note: The start in package.json was modified to permit reload when changes the code of page, insted the command start was added WATCHPACK_POLLING=true)
 
-If don't have the nodejs on machine, you can use Docker. First build the image with the Dockerfile
+If don't have the nodejs on machine, you can use Docker. 
+First build the image with the Dockerfile
 
 ### `docker build -t node-image .`
 
 Run using Docker command:
 
-### `docker run -it --rm -v "C:\Users\Brenim Ben10\Documents\Front\simple-react":/usr/app -p 3000:3000 node-image npm start`
+### `docker run -it --rm -v "your-path":/usr/app -p 3000:3000 node-image npm start`
 
 Or run using docker-compose:
 
